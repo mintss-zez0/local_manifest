@@ -8,8 +8,8 @@
         fetch="https://github.com/sm4450-development" />
 <remote name="clang"  
         fetch="https://gitlab.com/ImSurajxD"/>
-<remote name="sheshuv"
-         fetch="https://github.com/sheshuv" />
+<remote name="zez0"
+         fetch="https://github.com/mintss-zez0" />
 <remote name="lineage"
          fetch="https://github.com/LineageOS" />
         
