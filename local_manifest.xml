@@ -4,14 +4,6 @@
     <!-- Remotes -->
 	<remote name="hub"
 		fetch="https://github.com" />		
-	<remote name="duck"
-		fetch="https://github.com/mintss-zez0" />
-        <remote name="arrow-os"
-		fetch="https://github.com/ArrowOS" />
-        <remote name="arrow-devices"
-		fetch="https://github.com/ArrowOS-Devices" />  
-        <remote name="lineage-os"
-		fetch="https://github.com/LineageOS" />
         <remote name="clang"
 		fetch="https://gitlab.com/Panchajanya1999" />
         <remote name="dev"
@@ -19,43 +11,18 @@
 		  
   
     <!-- Device Tree -->
-	<project name="device_xiaomi_sky" path="device/xiaomi/sky" remote="dev" revision="uvite" />
+		<project name="device_xiaomi_sky" path="device/xiaomi/sky" remote="dev" revision="topaz" />
 	
     <!-- Kernel Source -->
-	<project name="device_xiaomi_sky-kernel" path="kernel/xiaomi/sky" remote="dev" revision="uvite" />
+		<project name="device_xiaomi_sky-kernel" path="kernel/xiaomi/sky" remote="dev" revision="tm" />
 
     <!-- Proprietary Blobs -->
-	<project name="android_vendor_aospa" path="vendor/xiaomi/sky" remote="dev" revision="uvite" />
+		<project name="android_vendor_aospa" path="vendor/xiaomi/sky" remote="dev" revision="topaz" />
 	
     <!-- Toolchain -->
         <project name="azure-clang" path="prebuilts/clang/host/linux-x86/clang-azure" remote="clang" revision="main" />
 
-    <!-- Device Settings -->
-	<project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="arrow-os" revision="arrow-14.0" />
-
-    <!-- Hardware Trees -->
-        <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage-os" revision="lineage-21" />
-	
-    <!-- Extras -->
-	<project name="android_device_xiaomi_extras" path="device/xiaomi/extras" remote="arrow-devices" revision="arrow-12.0" />
-	
-    <!-- GCamGO Prebuilt -->
-	<project name="android_packages_apps_GCamGOPrebuilt" path="packages/apps/GCamGOPrebuilt" remote="arrow-devices" revision="arrow-13.1" />
-	 
     <!-- HALs Replacement -->	
-	<remove-project name="android_hardware_qcom_audio" />
-        <project name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="lineage-os" revision="lineage-21.0" />
-
-        <remove-project name="android_hardware_qcom_display" />
-        <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="lineage-os" revision="lineage-21.0" />
-
-        <remove-project name="android_hardware_qcom_media" />
-        <project name="android_hardware_qcom_media" path="hardware/qcom/media" remote="lineage-os" revision="lineage-21.0" />
-
-        <remove-project name="android_vendor_qcom_opensource_fm-commonsys" />
-        <project name="android_vendor_qcom_opensource_fm-commonsys" path="vendor/qcom/opensource/fm-commonsys" remote="arrow-os" revision="arrow-13.1" />
-        
-        <remove-project name="device_qcom_sepolicy_vndr" />
-        <project name="android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="lineage-os" revision="lineage-21.0-legacy-um" />
+		
 
 </manifest>
