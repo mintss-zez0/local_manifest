@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <manifest>
 
-    <!-- Remotes -->
-	<remote name="hub"
-		fetch="https://github.com" />		
-        <remote name="clang"
-		fetch="https://gitlab.com/Panchajanya1999" />
-        <remote name="dev"
-		fetch="https://github.com/sm4450-development" />
-		  
+<remote name="hub"
+        fetch="https://github.com" />
+<remote name="dev"
+        fetch="https://github.com/sm4450-development" />
+<remote name="clang"  
+        fetch="https://gitlab.com/ImSurajxD"/>
+<remote name="sheshuv"
+         fetch="https://github.com/sheshuv" />
+<remote name="lineage"
+         fetch="https://github.com/LineageOS" />
+        
+  <!-- Device Trees -->
+  <project path="device/xiaomi/sky" name="mintss-zez0/device_xiaomi_sky.git" remote="hub" revision="404" clone-depth="1" />
   
-    <!-- Device Tree -->
-		<project name="device_xiaomi_sky" path="device/xiaomi/sky" remote="dev" revision="topaz" />
-	
-    <!-- Kernel Source -->
-		<project name="device_xiaomi_sky-kernel" path="kernel/xiaomi/sky" remote="dev" revision="tm" />
+  <!-- Kernel Trees-->
+  <project path="device/xiaomi/sky-kernel" name="miju12/device_xiaomi_sky-kernel.git" remote="hub" revision="lineage-20.0" clone-depth="1" />
+  
+  <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/sky" name="miju12/vendor_xiaomi_sky.git" remote="hub" revision="lineage-20.0" clone-depth="1" />
 
-    <!-- Proprietary Blobs -->
-		<project name="android_vendor_aospa" path="vendor/xiaomi/sky" remote="dev" revision="topaz" />
-	
-    <!-- Toolchain -->
-        <project name="azure-clang" path="prebuilts/clang/host/linux-x86/clang-azure" remote="clang" revision="main" />
+  <remove-project name="vendor_aosp" />    
 
-    <!-- HALs Replacement -->	
-		
+  <!-- pixel props-->
+  <project path="vendor/extra/ih8sn" name="ItsVixano/ih8sn" remote="hub" revision="master" clone-depth="1" />
+ 
+  <project path="vendor/aosp" name="vendor_aosp.git" remote="sheshuv" revision="thirteen" clone-depth="1"  />
 
-</manifest>
+  </manifest>
